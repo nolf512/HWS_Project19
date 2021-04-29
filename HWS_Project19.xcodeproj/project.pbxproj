@@ -13,8 +13,6 @@
 		3C869BA42637F38B0022E649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C869BA22637F38B0022E649 /* Main.storyboard */; };
 		3C869BA62637F3900022E649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C869BA52637F3900022E649 /* Assets.xcassets */; };
 		3C869BA92637F3900022E649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C869BA72637F3900022E649 /* LaunchScreen.storyboard */; };
-		3C869BB826385A9D0022E649 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C869BB726385A9D0022E649 /* AuthenticationServices.framework */; };
-		3C869BC226385A9D0022E649 /* Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3C869BB526385A9D0022E649 /* Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3C869BD226385C1E0022E649 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C869BD126385C1E0022E649 /* Media.xcassets */; };
 		3C869BD426385C1E0022E649 /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C869BD326385C1E0022E649 /* ActionViewController.swift */; };
 		3C869BD726385C1E0022E649 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C869BD526385C1E0022E649 /* MainInterface.storyboard */; };
@@ -23,13 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C869BC026385A9D0022E649 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C869B912637F38B0022E649 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C869BB426385A9D0022E649;
-			remoteInfo = Extension;
-		};
 		3C869BD926385C1E0022E649 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3C869B912637F38B0022E649 /* Project object */;
@@ -47,7 +38,6 @@
 			dstSubfolderSpec = 13;
 			files = (
 				3C869BDB26385C1E0022E649 /* Extension1.appex in Embed App Extensions */,
-				3C869BC226385A9D0022E649 /* Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +53,6 @@
 		3C869BA52637F3900022E649 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C869BA82637F3900022E649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C869BAA2637F3900022E649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3C869BB526385A9D0022E649 /* Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C869BB726385A9D0022E649 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
 		3C869BCF26385C1E0022E649 /* Extension1.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Extension1.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C869BD126385C1E0022E649 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
@@ -78,14 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C869BB226385A9D0022E649 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C869BB826385A9D0022E649 /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				3C869B992637F38B0022E649 /* HWS_Project19.app */,
-				3C869BB526385A9D0022E649 /* Extension.appex */,
 				3C869BCF26385C1E0022E649 /* Extension1.appex */,
 			);
 			name = Products;
@@ -168,30 +148,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				3C869BC126385A9D0022E649 /* PBXTargetDependency */,
 				3C869BDA26385C1E0022E649 /* PBXTargetDependency */,
 			);
 			name = HWS_Project19;
 			productName = HWS_Project19;
 			productReference = 3C869B992637F38B0022E649 /* HWS_Project19.app */;
 			productType = "com.apple.product-type.application";
-		};
-		3C869BB426385A9D0022E649 /* Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C869BC326385A9D0022E649 /* Build configuration list for PBXNativeTarget "Extension" */;
-			buildPhases = (
-				3C869BB126385A9D0022E649 /* Sources */,
-				3C869BB226385A9D0022E649 /* Frameworks */,
-				3C869BB326385A9D0022E649 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Extension;
-			productName = Extension;
-			productReference = 3C869BB526385A9D0022E649 /* Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 		3C869BCE26385C1E0022E649 /* Extension1 */ = {
 			isa = PBXNativeTarget;
@@ -222,9 +184,6 @@
 					3C869B982637F38B0022E649 = {
 						CreatedOnToolsVersion = 12.4;
 					};
-					3C869BB426385A9D0022E649 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					3C869BCE26385C1E0022E649 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -244,7 +203,6 @@
 			projectRoot = "";
 			targets = (
 				3C869B982637F38B0022E649 /* HWS_Project19 */,
-				3C869BB426385A9D0022E649 /* Extension */,
 				3C869BCE26385C1E0022E649 /* Extension1 */,
 			);
 		};
@@ -258,13 +216,6 @@
 				3C869BA92637F3900022E649 /* LaunchScreen.storyboard in Resources */,
 				3C869BA62637F3900022E649 /* Assets.xcassets in Resources */,
 				3C869BA42637F38B0022E649 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C869BB326385A9D0022E649 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,13 +242,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C869BB126385A9D0022E649 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3C869BCB26385C1E0022E649 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,11 +253,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3C869BC126385A9D0022E649 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C869BB426385A9D0022E649 /* Extension */;
-			targetProxy = 3C869BC026385A9D0022E649 /* PBXContainerItemProxy */;
-		};
 		3C869BDA26385C1E0022E649 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3C869BCE26385C1E0022E649 /* Extension1 */;
@@ -505,44 +444,6 @@
 			};
 			name = Release;
 		};
-		3C869BC426385A9D0022E649 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8SV798S53Y;
-				INFOPLIST_FILE = Extension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Jinapps.HWS-Project19.Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		3C869BC526385A9D0022E649 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8SV798S53Y;
-				INFOPLIST_FILE = Extension/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Jinapps.HWS-Project19.Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 		3C869BDD26385C1E0022E649 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -598,15 +499,6 @@
 			buildConfigurations = (
 				3C869BAE2637F3900022E649 /* Debug */,
 				3C869BAF2637F3900022E649 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C869BC326385A9D0022E649 /* Build configuration list for PBXNativeTarget "Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C869BC426385A9D0022E649 /* Debug */,
-				3C869BC526385A9D0022E649 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
